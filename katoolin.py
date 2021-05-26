@@ -5,7 +5,7 @@ import sys, traceback
 
 
 if os.getuid() != 0:
-	print "Sorry. This script requires sudo privledges"
+	print ("Sorry. This script requires sudo privledges")
 	sys.exit()
 def main():
 	try:
@@ -38,7 +38,7 @@ def main():
 
 			''')
 
-				opcion0 = raw_input("\033[1;36mkat > \033[1;m")
+				opcion0 = input("\033[1;36mkat > \033[1;m")
 			
 				while opcion0 == "1":
 					print ('''
